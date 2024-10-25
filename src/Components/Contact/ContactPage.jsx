@@ -43,8 +43,8 @@ const ContactPage = () => {
             >
                 <div className="flex items-center flex-col justify-center">
                     <div className="container mx-auto px-4 w-full lg:w-3/5 py-[10rem]">
-                        <h1 className="text-5xl font-bold text-white text-center mb-4">Contact Us</h1>
-                        <p className="text-white text-center mb-12">
+                        <h1 className="text-5xl font-bold text-white text-center tracking-wider mb-4">Contact Us</h1>
+                        <p className="text-white text-center mx-auto  w-[55%] text-wrap m-12">
                             Trabli is ready to provide the right solution according to your needs
                         </p>
 
