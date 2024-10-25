@@ -25,12 +25,9 @@ const ContactPage = () => {
     };
 
     return (
-        <motion.div
+        <div
             className="min-h-screen"
-            initial="hidden"
-            animate="visible"
-            variants={slideUpVariant}
-            transition={{ duration: 0.5 }}
+
         >
             {/* Contact Page with Image Background */}
             <div
@@ -41,7 +38,12 @@ const ContactPage = () => {
                     backgroundColor: 'rgba(0, 0, 0, 0.6)'
                 }}
             >
-                <div className="flex items-center flex-col justify-center">
+                <motion.div
+                    className="min-h-screen flex items-center flex-col justify-center"
+                    initial="hidden"
+                    animate="visible"
+                    variants={slideUpVariant}
+                    transition={{ duration: 0.5 }}>
                     <div className="container mx-auto px-4 w-full lg:w-3/5 py-[10rem]">
                         <h1 className="text-5xl font-bold text-white text-center tracking-wider mb-4">Contact Us</h1>
                         <p className="text-white text-center mx-auto  w-[55%] text-wrap m-12">
@@ -179,7 +181,7 @@ const ContactPage = () => {
                             Our Team
                         </button>
                     </div>
-                </div>
+                </motion.div>
             </div>
 
             {/* Office Location Section */}
@@ -252,7 +254,7 @@ const ContactPage = () => {
                     </div>
                 </div>
             </motion.div>
-        </motion.div>
+        </div>
     );
 };
 
