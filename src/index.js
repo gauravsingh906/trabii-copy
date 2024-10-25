@@ -3,9 +3,13 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Layout from './Layout';
+<<<<<<< HEAD
 import ContactPage from './Components/Contact/ContactPage';
 import ServicesSection from './Components/Services/ServicesPage';
 
+=======
+import PreRegistar from './Pages/PreRegistar';
+>>>>>>> e8b29fcf03e5cfce2809122eda2d25453ece47cc
 
 
 const router = createBrowserRouter(
