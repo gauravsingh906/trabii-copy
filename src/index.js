@@ -3,17 +3,20 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Layout from './Layout';
+import ContactPage from './Components/Contact/ContactPage';
+import ServicesSection from './Components/Services/ServicesPage';
+
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout />}>
+    <Route path='/' element={<Layout></Layout>}>
       <Route path='' element={<div>kuldeep</div>} />
       <Route path='/pre-register' element={<div>kuldeep</div>} />
       <Route path='/for-users' element={<div>kuldeep</div>} />
       <Route path='/for-business-owners' element={<div>kuldeep</div>} />
-      <Route path='/contact' element={<div>kuldeep</div>} />
-      <Route path='/services' element={<div>kuldeep</div>} />
+      <Route path='/contact' element={<ContactPage></ContactPage>} />
+      <Route path='/services' element={<ServicesSection></ServicesSection>} />
       <Route path='/legality' element={<div>kuldeep</div>} />
       <Route path='/privacy-policy-app' element={<div>kuldeep</div>} />
       <Route path='/privacy-policy-website' element={<div>kuldeep</div>} />

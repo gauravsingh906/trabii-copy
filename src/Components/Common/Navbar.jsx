@@ -56,7 +56,7 @@ const navbarDropDownLinks = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className='fixed w-full  top-0 h-18 flex flex-col items-center bg-black'>
+    <div className='fixed w-full z-10  top-0 h-18 flex flex-col items-center bg-black'>
       <div className='relative md:max-w-screen-xl w-full  text-white flex justify-between md:justify-start items-center md:gap-6 text-lg px-7'>
         <NavLink to='/'>
           <img src={navbarLogo} className='w-28 h-auto' alt='navbarLogo' ></img>
@@ -68,7 +68,7 @@ const Navbar = () => {
         }
 
         {/* mobile view */}
-        <div className={`absolute top-[100%] left-0 px-7 w-full transition-all duration-3000 ease-in-out bg-black  flex-grow md:hidden flex flex-col items-end gap-8  ${open? 'h-fit py-5': 'h-0 overflow-hidden'}`}>
+        <div className={`absolute top-[100%] left-0 px-7 w-full transition-all duration-3000 ease-in-out bg-black  flex-grow md:hidden flex flex-col items-end gap-8  ${open ? 'h-fit py-5' : 'h-0 overflow-hidden'}`}>
           {
             navbarLinks.map((navbarLink, index) => {
               return (
