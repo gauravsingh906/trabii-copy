@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom/client';
 import Layout from './Layout';
 import PreRegistar from './Pages/PreRegistar';
 import ContactPage from './Components/Contact/ContactPage';
+import ServicesPage from './Components/Service/ServicePage';
 
 
 const router = createBrowserRouter(
@@ -15,7 +16,7 @@ const router = createBrowserRouter(
       <Route path='/for-users' element={<div>kuldeep</div>} />
       <Route path='/for-business-owners' element={<div>kuldeep</div>} />
       <Route path='/contact' element={<ContactPage></ContactPage>} />
-      <Route path='/services' element={<div>kuldeep</div>} />
+      <Route path='/services' element={<ServicesPage></ServicesPage>} />
       <Route path='/legality' element={<div>kuldeep</div>} />
       <Route path='/privacy-policy-app' element={<div>kuldeep</div>} />
       <Route path='/privacy-policy-website' element={<div>kuldeep</div>} />
